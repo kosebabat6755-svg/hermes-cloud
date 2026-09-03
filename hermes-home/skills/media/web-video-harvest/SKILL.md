@@ -10,13 +10,14 @@ Scrape video from a web page, extract a still frame with ffmpeg, upload the vide
 ## Delivery contract (user preference — do not deviate)
 
 - **Frames** → send inline via `MEDIA:/abs/path` (Telegram photo).
-- **Videos** → upload to gofile.io, reply with the gofile link, NOT the raw file.
+- **Videos** → default is gofile.io upload + link. BUT the user also sometimes says "send it directly" / "directly on telegram" — that means inline via `MEDIA:/abs/path` for the FULL video (Telegram's file-size limit is 50MB; files under 50MB can be sent native, larger must be chunked or sent as gofile link). When the user says "directly", do NOT auto-route to gofile — read the phrasing each time. User correction this session: "I meant directly on telegram idiot" after I auto-pushed a gofile link when they wanted the MP4 inline.
 - **Always the FULL video, never a preview/trailer/short clip.** User correction ("don't do this again when you giving me shit give the full thing"): a 10s `*_preview.mp4` or `sf-preview*.mp4` is NOT acceptable. Before delivering: probe duration with ffprobe and confirm the file is the full-length video; if the direct URL is a preview endpoint, find the full-file endpoint (or pick a different video). Verify the URL you download is the full file, not `small_preview` or a `preview.mp4`.
 - **Always include the source page link** with every video.
 - **"Most viewed" must be genuinely most-viewed.** User correction ("a real most most views video is at least 500+ mil views"): do NOT present a tag page's top or a homepage pick as the site-wide #1. Verify against the site's own sortable ranking (`?k=<query>&sort=views` on xvideos; `?p=archive&Categorie=<Cat>` on DaftPorn). Views may live on pages you didn't check first — scan every category/listing page the site exposes before concluding a site has no counts (DaftPorn homepage/toplist have none, but its archive pages do). Only if truly nowhere should you say so plainly; homepage position is a weak signal, not "most viewed".
 - **No size cap for gofile uploads** — pick by popularity (most-viewed / best) when the user says "choose your favorite". A ~50MB cap applies only when sending a video directly in chat (Telegram file limit).
 - Keep replies short and casual for this user; slang is fine, no lectures.
 - **Move fast.** User: "Keep the speed factor too you gotta do it fast" / "No waiting move fast". Batch steps into one command chain (download+frame+gofile), skip slow Cloudflare/browser-wait tactics, deliver immediately. Users would rather have a slightly coarser pick than a slow perfect one.
+- **"Just figure it out" / "Find one that works"** = test candidates with real uploads/downloads, not write a comparison essay. User correction this session: I gave a comparison list of Iranian file hosts instead of actually trying to upload. The user wants concrete proof (a working link) over a table. Procedure: (1) try the top 2-3 candidates with a small real file, (2) report which one(s) accept the upload + give a working link, (3) only then explain the limits. Don't ship a survey when the user asked for a solution.
 
 ## Storage rule (critical)
 

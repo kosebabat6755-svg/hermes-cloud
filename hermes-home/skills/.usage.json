@@ -5,14 +5,14 @@
     "created_by": "agent",
     "last_patched_at": "2026-09-02T22:00:20.854951+00:00",
     "last_reused_patch_generation": 13,
-    "last_used_at": "2026-09-02T22:21:11.087341+00:00",
-    "last_viewed_at": "2026-09-02T22:21:11.086442+00:00",
+    "last_used_at": "2026-09-03T14:44:28.512532+00:00",
+    "last_viewed_at": "2026-09-03T14:44:28.511553+00:00",
     "patch_count": 13,
     "patch_generation": 13,
     "pinned": false,
     "state": "active",
-    "use_count": 18,
-    "view_count": 18
+    "use_count": 20,
+    "view_count": 20
   },
   "youtube-download-savenow": {
     "archived_at": null,
@@ -20,13 +20,13 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-09-03T14:44:00.326894+00:00",
+    "last_viewed_at": "2026-09-03T14:44:00.325211+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   }
 }
