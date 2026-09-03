@@ -17,6 +17,10 @@ providers:
     default_model: Flash-lite
     models:
       - Flash-lite
+      - Chatgem
+      - Gem
+      - Nvidia-NEM
+      - NEM2
 
 memory:
   memory_enabled: true
