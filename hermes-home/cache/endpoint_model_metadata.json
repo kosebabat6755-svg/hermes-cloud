@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788447327.530346,
+"at":1788450079.0908813,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -1807,6 +1807,12 @@
 },
 "models/lyria-3-pro-preview":{
 "name":"Gem/models/lyria-3-pro-preview"
+},
+"Gem/models/lyria-3.5":{
+"name":"Gem/models/lyria-3.5"
+},
+"models/lyria-3.5":{
+"name":"Gem/models/lyria-3.5"
 },
 "Gem/models/gemini-robotics-er-2-preview":{
 "name":"Gem/models/gemini-robotics-er-2-preview"
