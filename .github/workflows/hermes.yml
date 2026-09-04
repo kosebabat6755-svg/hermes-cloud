@@ -64,3 +64,5 @@ jobs:
         run: |
           chmod +x run_hermes.sh bootstrap_profile.sh
           ./run_hermes.sh
+
+# schedule re-registration touch
