@@ -1,6 +1,6 @@
 {
 "https://openrouter.ai/api/v1/models":{
-"ts":1788478966.8560832,
+"ts":1788480167.3554688,
 "caps":{
 "meta/muse-spark-1.3-contributor":{
 "supports_reasoning":true,
@@ -878,6 +878,11 @@
 "mandatory":true
 },
 "nex-agi/nex-n2-pro":{
+"supports_reasoning":true,
+"supported_efforts":null,
+"mandatory":false
+},
+"nvidia/nemotron-3.5-content-safety":{
 "supports_reasoning":true,
 "supported_efforts":null,
 "mandatory":false
