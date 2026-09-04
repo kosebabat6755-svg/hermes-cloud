@@ -23,6 +23,13 @@ Scrape video from a web page, extract a still frame with ffmpeg, upload the vide
 
 Save ALL downloads/builds to `~/work/hermes-cloud/hermes-cloud/state/hermes/workdir/`. NEVER `/tmp` or `~` — the host env resets (Azure ephemeral VPS) and wipes everything outside the Hermes state dir. Frames, videos, scripts, editors all live in workdir. (Memory also carries this.)
 
+**Env-reset recovery (verify on every fresh session / after interruption):** The workdir path itself can be deleted on a hard reset, AND helper binaries (ffmpeg, ffprobe, ffmpeg-related Python tools) get blown away. Before any media work, run:
+```bash
+mkdir -p ~/work/hermes-cloud/hermes-cloud/state/hermes/workdir
+which ffmpeg ffprobe || sudo apt-get install -y -qq ffmpeg
+```
+ffmpeg/ffprobe re-install is fast (one apt call). If a pipeline says "No such file or directory: ffmpeg" or "ffprobe", it is the reset, not a logic bug — re-install and continue. Do NOT chase a phantom bug.
+
 ## Core pipeline
 
 1. **Fetch the listing/view page** with a desktop UA (`curl -sL -A "Mozilla/5.0 ... Chrome/126.0 ..."`).
