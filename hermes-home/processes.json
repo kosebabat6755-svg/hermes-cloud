@@ -113,5 +113,28 @@
     "parent_session_id": "",
     "notify_on_complete": true,
     "watch_patterns": []
+  },
+  {
+    "session_id": "proc_e6fa706f296f",
+    "command": "rm -f /tmp/.X98-lock; export DISPLAY=:98; export WINEPREFIX=/home/runner/.wine_mt5; export WINEARCH=win64; export WINEDEBUG=-all; Xvfb :98 -screen 0 1280x800x24 -ac; sleep 1200",
+    "pid": 29162,
+    "pid_scope": "host",
+    "host_start_time": 1185904,
+    "systemd_unit": "hermes-worker-proc_e6fa706f296f.scope",
+    "cwd": "/tmp",
+    "started_at": 1788528951.9972913,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "telegram",
+    "watcher_chat_id": "6592796294",
+    "watcher_user_id": "6592796294",
+    "watcher_user_name": "Mohammad",
+    "watcher_thread_id": "",
+    "watcher_message_id": "3526",
+    "watcher_interval": 5,
+    "parent_session_id": "",
+    "notify_on_complete": true,
+    "watch_patterns": []
   }
 ]
