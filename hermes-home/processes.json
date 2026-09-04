@@ -44,5 +44,28 @@
     "parent_session_id": "",
     "notify_on_complete": true,
     "watch_patterns": []
+  },
+  {
+    "session_id": "proc_181fb6a9e2f8",
+    "command": "export DISPLAY=:99; export WINEPREFIX=/home/runner/.wine; cd /tmp && wine mt4setup.exe /auto 2>&1; echo \"MT4 install done\"",
+    "pid": 21016,
+    "pid_scope": "host",
+    "host_start_time": 1066679,
+    "systemd_unit": "hermes-worker-proc_181fb6a9e2f8.scope",
+    "cwd": "/tmp",
+    "started_at": 1788527759.7406383,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "telegram",
+    "watcher_chat_id": "6592796294",
+    "watcher_user_id": "6592796294",
+    "watcher_user_name": "Mohammad",
+    "watcher_thread_id": "",
+    "watcher_message_id": "3444",
+    "watcher_interval": 5,
+    "parent_session_id": "",
+    "notify_on_complete": true,
+    "watch_patterns": []
   }
 ]
