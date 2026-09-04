@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788534327.395552,
+"at":1788537831.8428724,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -260,12 +260,6 @@
 "glm-5.3-flash":{
 "name":"nara/glm-5.3-flash"
 },
-"nara/glm-5.3-flash-free":{
-"name":"nara/glm-5.3-flash-free"
-},
-"glm-5.3-flash-free":{
-"name":"nara/glm-5.3-flash-free"
-},
 "nara/glm-5.3-free":{
 "name":"nara/glm-5.3-free"
 },
@@ -445,12 +439,6 @@
 },
 "qwen3.8-flash":{
 "name":"nara/qwen3.8-flash"
-},
-"nara/qwen3.8-flash-free":{
-"name":"nara/qwen3.8-flash-free"
-},
-"qwen3.8-flash-free":{
-"name":"nara/qwen3.8-flash-free"
 },
 "nara/qwen3.8-max":{
 "name":"nara/qwen3.8-max"
