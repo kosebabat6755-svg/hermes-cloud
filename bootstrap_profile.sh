@@ -34,7 +34,7 @@ display:
       tool_preview_length: 130
 
 telegram:
-  reactions: true
+  reactions: false
 YAML
 
 cat > "$H/.env" << ENV
