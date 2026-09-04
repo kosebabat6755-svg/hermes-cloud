@@ -1,6 +1,6 @@
 {
 "https://openrouter.ai/api/v1/models":{
-"ts":1788522858.5743995,
+"ts":1788524058.9434922,
 "caps":{
 "meta/muse-spark-1.3-contributor":{
 "supports_reasoning":true,
