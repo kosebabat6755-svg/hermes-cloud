@@ -106,7 +106,7 @@
         },
         {
           "modelName": "inclusionai/ling-3.0-flash-fin:free",
-          "displayName": "Ling 3.0 Flash Fin (free)",
+          "displayName": "inclusionAI: Ling 3.0 Flash Fin (free)",
           "source": "openrouter",
           "href": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin-20260827",
           "tokenPrice": "$0.00/1M",
@@ -204,7 +204,7 @@
         },
         {
           "modelName": "inclusionai/ling-3.0-flash-fin:free",
-          "displayName": "Ling 3.0 Flash Fin (free)",
+          "displayName": "inclusionAI: Ling 3.0 Flash Fin (free)",
           "source": "openrouter",
           "href": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin-20260827",
           "tokenPrice": "$0.00/1M",
@@ -302,6 +302,6 @@
         "updatedAt": "2026-08-31T12:56:37.166Z"
       }
     },
-    "ts": 1788549869.5259027
+    "ts": 1788551070.0314102
   }
 }
