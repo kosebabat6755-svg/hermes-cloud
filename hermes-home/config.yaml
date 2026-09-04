@@ -18,7 +18,7 @@ display:
       tool_progress: all
       tool_preview_length: 130
 telegram:
-  reactions: true
+  reactions: false
 onboarding:
   seen:
     profile_build_offered: true
