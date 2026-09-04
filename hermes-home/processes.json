@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "session_id": "proc_913324bc7130",
+    "command": "export DISPLAY=:98 WINEPREFIX=/home/runner/.wine_mt5 WINEARCH=win64 WINEDEBUG=-all\nrm -f /tmp/.X98-lock\npgrep -f \"Xvfb :98\" || Xvfb :98 -screen 0 1280x800x24 -ac &\nsleep 2\n# Init MT5 wine prefix\n[ -d \"$WINEPREFIX\" ] || (wineboot --init 2>&1 | tail -2)\n# MT5 install\necho \"=== MT5 install starting ===\"\nwine /tmp/mt5setup.exe /auto 2>&1 | grep -vE \"^$|fixme|err|warn\" | tail -20\necho \"=== MT5 install done ===\"\nls \"$WINEPREFIX/drive_c/Program Files/MetaTrader 5/\" 2>&1 | head -3",
+    "pid": 13365,
+    "pid_scope": "host",
+    "host_start_time": 1704638,
+    "systemd_unit": "hermes-worker-proc_913324bc7130.scope",
+    "cwd": "/home/runner",
+    "started_at": 1788554706.7093108,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_message_id": "",
+    "watcher_interval": 0,
+    "parent_session_id": "",
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]
