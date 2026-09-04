@@ -20,14 +20,14 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-09-04T15:04:18.918649+00:00",
+    "last_viewed_at": "2026-09-04T15:04:18.917334+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "web-video-harvest": {
     "archived_at": null,
@@ -35,14 +35,14 @@
     "created_by": "agent",
     "last_patched_at": "2026-09-04T13:01:11.255832+00:00",
     "last_reused_patch_generation": 14,
-    "last_used_at": "2026-09-04T13:03:45.325372+00:00",
-    "last_viewed_at": "2026-09-04T13:03:45.323374+00:00",
+    "last_used_at": "2026-09-04T15:04:18.923380+00:00",
+    "last_viewed_at": "2026-09-04T15:04:18.922515+00:00",
     "patch_count": 14,
     "patch_generation": 14,
     "pinned": false,
     "state": "active",
-    "use_count": 31,
-    "view_count": 31
+    "use_count": 32,
+    "view_count": 32
   },
   "youtube-download-savenow": {
     "archived_at": null,

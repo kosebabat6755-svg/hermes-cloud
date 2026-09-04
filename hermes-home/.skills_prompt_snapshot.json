@@ -185,6 +185,10 @@
       1788499125000000000,
       8477
     ],
+    "creative/free-ai-image-gen/SKILL.md": [
+      1788522479632630538,
+      4331
+    ],
     "creative/claude-design/SKILL.md": [
       1788499125000000000,
       25117
@@ -278,8 +282,8 @@
       2336
     ],
     "media/web-video-harvest/SKILL.md": [
-      1788521131442833264,
-      7993
+      1788526871245129525,
+      10037
     ]
   },
   "skills": [
@@ -519,6 +523,20 @@
         "macos",
         "windows"
       ],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": [],
+        "session_platforms": []
+      }
+    },
+    {
+      "skill_name": "free-ai-image-gen",
+      "category": "creative",
+      "frontmatter_name": "free-ai-image-gen",
+      "description": "Pollinations FLUX free image gen, no signup needed.",
+      "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
