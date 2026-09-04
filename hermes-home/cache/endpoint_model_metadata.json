@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788530234.11557,
+"at":1788534017.9542146,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -247,12 +247,6 @@
 },
 "glm-5.2-alibaba":{
 "name":"nara/glm-5.2-alibaba"
-},
-"nara/glm-5.2-promo":{
-"name":"nara/glm-5.2-promo"
-},
-"glm-5.2-promo":{
-"name":"nara/glm-5.2-promo"
 },
 "nara/glm-5.3":{
 "name":"nara/glm-5.3"
