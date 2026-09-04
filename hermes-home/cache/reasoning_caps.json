@@ -1,6 +1,6 @@
 {
 "https://openrouter.ai/api/v1/models":{
-"ts":1788484475.5354695,
+"ts":1788485676.57426,
 "caps":{
 "meta/muse-spark-1.3-contributor":{
 "supports_reasoning":true,
@@ -1018,6 +1018,16 @@
 "supports_reasoning":false
 },
 "x-ai/grok-4.3":{
+"supports_reasoning":true,
+"supported_efforts":[
+"high",
+"medium",
+"low",
+"none"
+],
+"mandatory":false
+},
+"x-ai/grok-4.3:batch":{
 "supports_reasoning":true,
 "supported_efforts":[
 "high",
