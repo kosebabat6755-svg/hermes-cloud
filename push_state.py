@@ -45,8 +45,9 @@ def gh(method, path, payload=None):
 SKIP_DIRS = {"__pycache__", ".cache", "node_modules", "request_dumps", "tmp", "crashes"}
 SKIP_FILES = {".env", "gateway.log", "nohup.out"}
 PUSHABLE_EXT = {".db", ".db-wal", ".db-shm", ".json", ".yaml", ".yml", ".md", ".txt", ".jsonl", ".skill"}
-SIZE_CAP = 50 * 1024 * 1024  # 50MB — state.db crossed the old 8MB cap and was silently
-                             # skipped for hours = the "chat history reverts at reset" bug (2026-09-04)
+# NO SIZE CAP (boss order 2026-09-04): push everything. If repo bloat ever breaks pushes,
+# we fix it manually. Over-100MB blobs will fail loudly per-file (API hard limit) without
+# blocking other files — each blob upload is independent.
 
 def iter_files():
     for root, dirs, files in os.walk(STATE_ROOT):
@@ -57,9 +58,8 @@ def iter_files():
             p = os.path.join(root, f)
             try:
                 sz = os.path.getsize(p)
-                if sz > SIZE_CAP:
-                    print(f"[pusher] SKIP-SIZE {f} ({sz} bytes > {SIZE_CAP})", flush=True)
-                    continue
+                if sz > 90 * 1024 * 1024:
+                    print(f"[pusher] BIG-FILE {f} ({sz} bytes) — above git blob API limit, push will fail per-file", flush=True)
                 with open(p, "rb") as fh:
                     yield os.path.relpath(p, STATE_ROOT).replace(os.sep, "/"), fh.read()
             except OSError:
