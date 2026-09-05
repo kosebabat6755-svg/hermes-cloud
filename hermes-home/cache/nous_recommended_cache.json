@@ -38,13 +38,19 @@
         },
         {
           "modelName": "openai/gpt-6-astra-fast",
-          "displayName": "openai/gpt-6-astra-fast",
-          "source": "local",
-          "href": null,
-          "tokenPrice": null,
-          "contextLength": null,
-          "inputModalities": [],
-          "outputModalities": [],
+          "displayName": "OpenAI: GPT-6 Astra Fast",
+          "source": "openrouter",
+          "href": "https://openrouter.ai/openai/gpt-6-astra-20260903",
+          "tokenPrice": "in $20.00 / out $100.00 per 1M",
+          "contextLength": 1050000,
+          "inputModalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "outputModalities": [
+            "text"
+          ],
           "position": 2,
           "isVisionModel": false,
           "isCompactionModel": false,
@@ -52,13 +58,19 @@
         },
         {
           "modelName": "openai/gpt-6-astra-flex",
-          "displayName": "openai/gpt-6-astra-flex",
-          "source": "local",
-          "href": null,
-          "tokenPrice": null,
-          "contextLength": null,
-          "inputModalities": [],
-          "outputModalities": [],
+          "displayName": "OpenAI: GPT-6 Astra Flex",
+          "source": "openrouter",
+          "href": "https://openrouter.ai/openai/gpt-6-astra-20260903",
+          "tokenPrice": "in $5.00 / out $25.00 per 1M",
+          "contextLength": 1050000,
+          "inputModalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "outputModalities": [
+            "text"
+          ],
           "position": 3,
           "isVisionModel": false,
           "isCompactionModel": false,
@@ -86,13 +98,19 @@
         },
         {
           "modelName": "openai/gpt-6-astra-pro-fast",
-          "displayName": "openai/gpt-6-astra-pro-fast",
-          "source": "local",
-          "href": null,
-          "tokenPrice": null,
-          "contextLength": null,
-          "inputModalities": [],
-          "outputModalities": [],
+          "displayName": "OpenAI: GPT-6 Astra Pro Fast",
+          "source": "openrouter",
+          "href": "https://openrouter.ai/openai/gpt-6-astra-pro-20260903",
+          "tokenPrice": "in $20.00 / out $100.00 per 1M",
+          "contextLength": 1050000,
+          "inputModalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "outputModalities": [
+            "text"
+          ],
           "position": 5,
           "isVisionModel": false,
           "isCompactionModel": false,
@@ -100,13 +118,19 @@
         },
         {
           "modelName": "openai/gpt-6-astra-pro-flex",
-          "displayName": "openai/gpt-6-astra-pro-flex",
-          "source": "local",
-          "href": null,
-          "tokenPrice": null,
-          "contextLength": null,
-          "inputModalities": [],
-          "outputModalities": [],
+          "displayName": "OpenAI: GPT-6 Astra Pro Flex",
+          "source": "openrouter",
+          "href": "https://openrouter.ai/openai/gpt-6-astra-pro-20260903",
+          "tokenPrice": "in $5.00 / out $25.00 per 1M",
+          "contextLength": 1050000,
+          "inputModalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "outputModalities": [
+            "text"
+          ],
           "position": 6,
           "isVisionModel": false,
           "isCompactionModel": false,
@@ -374,6 +398,6 @@
         "updatedAt": "2026-09-04T22:42:56.757Z"
       }
     },
-    "ts": 1788565466.6040833
+    "ts": 1788566666.819207
   }
 }
