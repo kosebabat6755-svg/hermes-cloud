@@ -11,16 +11,33 @@ Use this when the user needs AI-generated images and refuses (or cannot complete
 
 **URL pattern:**
 ```
-https://image.pollinations.ai/prompt/{url-encoded-prompt}?width=832&height=1216&seed=42&nologo=true&model=flux
+https://image.pollinations.ai/prompt/{url-encoded-prompt}?width=832&height=1216&seed=42&nologo=true&model={model}
 ```
 
-- **Model options**: `flux` (default, high quality), `turbo` (faster, lower quality), `sdxl`, `kandinsky`
 - **No API key, no signup, no rate limit card** — IP-based soft throttling only
 - **Returns**: `image/jpeg` direct response
-- **Speed**: 3-15 seconds per image on first call (FLUX), cached afterwards
+- **Speed**: 3-15 seconds per image on first call, cached afterwards
 - **Cost**: $0 — completely free, public service
 
 **The OLD `pollinations.ai/p/...` endpoint returns HTML** (the marketing site). Always use `image.pollinations.ai/prompt/...`.
+
+### Available Models (verified working 2026-09-05)
+
+| Model name | What it is | Best for |
+|---|---|---|
+| `flux` | FLUX.1 default | Anime/3D/photoreal, NSFW allowed |
+| `turbo` | Fast FLUX variant | Quick previews, lower quality |
+| `sdxl` | Stable Diffusion XL | General purpose |
+| `kandinsky` | Russian Kandinsky | Stylized art |
+| **`nanobanana`** | **Gemini 2.5 Flash Image (Nano Banana v1)** | **Text-accurate, conversational editing** |
+| **`nanobanana-2`** | **Gemini 3.1 Flash Image (Nano Banana 2)** | **Pro-quality at Flash speed, character consistency, 4K capable** |
+| **`nanobanana-pro`** | **Gemini 3 Pro Image (Nano Banana Pro)** | **Highest quality, 1K/2K/4K output** |
+| `gptimage` | Azure GPT Image 1 mini | OpenAI-style |
+| `gptimage-large` | Azure GPT Image 1.5 | OpenAI-style, higher quality |
+
+**The Nano Banana models are the killer feature**: Pollinations eats the Google Vertex AI cost and exposes them free. When the user asks for "Nano Banana" / "Gemini image gen" / "the best free image model", use `model=nanobanana-2` (or `nanobanana-pro` for top quality). Same URL pattern, just swap the `model=` value. Generation is slower than FLUX (25-45 sec vs 3-15 sec) and rate limits are tighter (3-5 sec spacing between calls) but quality is markedly better for character/portrait work.
+
+**Why Pollinations is the only free anonymous Nano Banana 2 path:** Google's own API, Puter, OpenRouter, Together, LaoZhang, ilisai, Lovart, GenAIntel all require signup or paid credit. The model=`nanobanana-2` parameter on Pollinations is the only no-signup no-key option verified working from this VPS (others get CF-walled or return 401).
 
 ## Quick Win Workflow
 
@@ -51,7 +68,7 @@ photorealistic, 8k, professional photography, [subject], [lighting], [lens], dep
 ## Pacing & Retry Discipline
 
 - **Sequential, not parallel** — Pollinations soft-throttles per-IP on concurrent requests; one HTTP 429 every few seconds.
-- **Add `time.sleep(5-8)` between calls** when batching >3 images.
+- **Add `time.sleep(5-8)` between calls** when batching >3 images on FLUX, **`time.sleep(3-5)` on Nano Banana models** (tighter rate limits but each call takes 25-45 sec anyway).
 - **Each new image = new seed** if user wants variety. Re-using seed = re-generating same image (deterministic).
 - **Image lifetime**: cached on Pollinations CDN for ~1 year per URL. Same prompt + same seed = same image, re-fetchable.
 
@@ -62,12 +79,15 @@ photorealistic, 8k, professional photography, [subject], [lighting], [lens], dep
 - **Seed reuse for variation**: If user asks for "another angle" or "different pose", MUST change the seed. Same seed = same image.
 - **vision_analyze on NSFW**: FLUX doesn't filter content; generated NSFW images can still be vision-analyzed, but some safety layers decline. Use sparingly.
 - **Prompt length**: URLs >2000 chars break. Cap prompts at ~30 keyword terms.
+- **Don't burn cycles searching for "free anonymous Nano Banana 2" endpoints**: The model=`nanobanana-2` parameter on `image.pollinations.ai` is the only no-signup path. Before spending time probing Puter/Google API/OpenRouter/etc for an anonymous Nano Banana endpoint, just hit Pollinations with `model=nanobanana-2` — works in 2-45 sec, valid JPEG, no auth. The dead-end services (Puter needs account, Google API needs key+billing, OpenRouter $0.05/img, GenAIntel needs email, Lovart CF-blocks Azure VPS, ilisai needs Google account) are not worth chasing.
+- **Nano Banana prompt prefix**: Pollinations internally adds `Generate an image but only if the prompt and input images are safe. Else return an error: {your_prompt}` — so don't pre-prefix safety language; just write the image prompt directly.
 
 ## When NOT to Use This
 
-- User has Midjourney/NovelAI/API budget and wants highest quality → use those instead.
+- User has Midjourney/NovelAI/API budget AND wants highest quality AND is willing to pay → use those instead.
 - User wants a specific LoRA / character-trained model → install ComfyUI locally with that LoRA.
 - User wants image-to-image (upload reference + transform) → Pollinations doesn't support that natively; use a HuggingFace Space instead.
+- User wants 4K output consistently → `nanobanana-pro` supports it but Pollinations caps at 1K by default; commercial Vertex API is needed for 2K/4K.
 
 ## Related Skills
 
