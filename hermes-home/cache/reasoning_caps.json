@@ -1,6 +1,6 @@
 {
 "https://openrouter.ai/api/v1/models":{
-"ts":1788583466.671009,
+"ts":1788584667.0373971,
 "caps":{
 "openai/gpt-6-astra":{
 "supports_reasoning":true,
@@ -384,17 +384,6 @@
 "mandatory":true
 },
 "meta/muse-spark-1.2":{
-"supports_reasoning":true,
-"supported_efforts":[
-"xhigh",
-"high",
-"medium",
-"low",
-"minimal"
-],
-"mandatory":true
-},
-"qwen/qwen3.8-max":{
 "supports_reasoning":true,
 "supported_efforts":[
 "xhigh",
