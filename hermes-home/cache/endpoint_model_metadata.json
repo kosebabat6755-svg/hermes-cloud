@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788602960.5688372,
+"at":1788609832.8139298,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -1873,6 +1873,9 @@
 },
 "BAI/gemini-3.5-flash":{
 "name":"BAI/gemini-3.5-flash"
+},
+"BAI/gpt-6-astra":{
+"name":"BAI/gpt-6-astra"
 },
 "BAI/qwen3.8-27b":{
 "name":"BAI/qwen3.8-27b"
