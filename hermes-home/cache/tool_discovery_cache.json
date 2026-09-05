@@ -1,1216 +1,1216 @@
 {
 "/home/runner/.hermes/hermes-agent/tools/annotate_preview_tool.py": [
-1788573771650886457,
+1788591780515553759,
 3947,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/ansi_strip.py": [
-1788573771650886457,
+1788591780515553759,
 4341,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/apply_layout_tool.py": [
-1788573771650886457,
+1788591780515553759,
 2335,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval.py": [
-1788573771650886457,
+1788591780515553759,
 58956,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_context.py": [
-1788573771650886457,
+1788591780515553759,
 14454,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_detection.py": [
-1788573771650940046,
+1788591780515553759,
 69322,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_floors.py": [
-1788573771650940046,
+1788591780515553759,
 9689,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_gateway_wait.py": [
-1788573771650940046,
+1788591780515553759,
 8362,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_human_wait.py": [
-1788573771650940046,
+1788591780515553759,
 8416,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_prompt.py": [
-1788573771650940046,
+1788591780515553759,
 15007,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/approval_smart.py": [
-1788573771650940046,
+1788591780515553759,
 7282,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/arg_coercion.py": [
-1788573771650940046,
+1788591780515553759,
 9068,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/async_delegation.py": [
-1788573771650940046,
+1788591780516373676,
 48981,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/audio_container.py": [
-1788573771650940046,
+1788591780516373676,
 2674,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/binary_extensions.py": [
-1788573771650940046,
+1788591780516373676,
 2274,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/blueprints.py": [
-1788573771651940053,
+1788591780516373676,
 9210,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/bot_failure_reasons.py": [
-1788573771651940053,
+1788591780516373676,
 3516,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/bot_mode_dm.py": [
-1788573771651940053,
+1788591780516373676,
 24931,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/bot_mode_probe.py": [
-1788573771651940053,
+1788591780516373676,
 15603,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/bot_relay.py": [
-1788573771651940053,
+1788591780516373676,
 22112,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_camofox.py": [
-1788573771651940053,
+1788591780516373676,
 27352,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_camofox_state.py": [
-1788573771651940053,
+1788591780516373676,
 1566,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_cdp_tool.py": [
-1788573771651940053,
+1788591780516373676,
 22206,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_dialog_tool.py": [
-1788573771651940053,
+1788591780516373676,
 5405,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_extension_router.py": [
-1788573771651940053,
+1788591780516373676,
 6355,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_lightpanda.py": [
-1788573771651940053,
+1788591780517373669,
 13117,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_supervisor.py": [
-1788573771652940061,
+1788591780517373669,
 24595,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_supervisor_dialogs.py": [
-1788573771652940061,
+1788591780517373669,
 15371,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_supervisor_frames.py": [
-1788573771652940061,
+1788591780517373669,
 8335,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool.py": [
-1788573771652940061,
+1788591780517373669,
 67157,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_cdp.py": [
-1788573771652940061,
+1788591780517373669,
 6285,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_cloud.py": [
-1788573771652940061,
+1788591780517373669,
 11900,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_eval_policy.py": [
-1788573771652940061,
+1788591780517373669,
 8639,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_install.py": [
-1788573771652940061,
+1788591780517373669,
 16089,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_lifecycle.py": [
-1788573771653940068,
+1788591780518373662,
 30967,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_lightpanda_fallback.py": [
-1788573771653940068,
+1788591780518373662,
 10116,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_origin.py": [
-1788573771653940068,
+1788591780518373662,
 2913,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_real_profile.py": [
-1788573771653940068,
+1788591780518373662,
 13430,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_session.py": [
-1788573771653940068,
+1788591780518373662,
 30545,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_snapshot.py": [
-1788573771653940068,
+1788591780518373662,
 5091,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_tool_vision.py": [
-1788573771653940068,
+1788591780518373662,
 7148,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/browser_use_cli.py": [
-1788573771653940068,
+1788591780518373662,
 37441,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/budget_config.py": [
-1788573771653940068,
+1788591780518373662,
 5629,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/checkpoint_manager.py": [
-1788573771653940068,
+1788591780518373662,
 56842,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/clarify_gateway.py": [
-1788573771654940075,
+1788591780519373655,
 14074,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/clarify_tool.py": [
-1788573771654940075,
+1788591780519373655,
 15373,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/close_preview_tool.py": [
-1788573771654940075,
+1788591780519373655,
 2571,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/close_terminal_tool.py": [
-1788573771654940075,
+1788591780519373655,
 2056,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/code_execution_env.py": [
-1788573771654940075,
+1788591780519373655,
 13040,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/code_execution_rpc.py": [
-1788573771654940075,
+1788591780519373655,
 8696,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/code_execution_tool.py": [
-1788573771654940075,
+1788591780519373655,
 47848,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/code_kernel.py": [
-1788573771654940075,
+1788591780519373655,
 36127,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/code_kernel_remote.py": [
-1788573771654940075,
+1788591780519373655,
 18023,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/computer_use_tool.py": [
-1788573771656940090,
+1788591780521373642,
 1104,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/credential_files.py": [
-1788573771656940090,
+1788591780521373642,
 17458,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/cronjob_job_args.py": [
-1788573771656940090,
+1788591780521373642,
 19890,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/cronjob_prompt_scan.py": [
-1788573771656940090,
+1788591780521373642,
 7861,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/cronjob_tools.py": [
-1788573771656940090,
+1788591780521373642,
 54014,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/daemon_pool.py": [
-1788573771657940097,
+1788591780521373642,
 2533,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/debug_helpers.py": [
-1788573771657940097,
+1788591780521373642,
 2187,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool.py": [
-1788573771657940097,
+1788591780522373635,
 36609,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_child_run.py": [
-1788573771657940097,
+1788591780522373635,
 45285,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_config.py": [
-1788573771657940097,
+1788591780522373635,
 29111,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_dispatch.py": [
-1788573771657940097,
+1788591780522373635,
 19311,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_progress.py": [
-1788573771657940097,
+1788591780522373635,
 20285,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_registry.py": [
-1788573771657940097,
+1788591780522373635,
 14606,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_results.py": [
-1788573771658940105,
+1788591780522373635,
 19445,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_tasks.py": [
-1788573771658940105,
+1788591780522373635,
 6381,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegate_tool_toolsets.py": [
-1788573771658940105,
+1788591780522373635,
 5489,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegation_live_log.py": [
-1788573771658940105,
+1788591780523373628,
 13883,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/delegation_output_schema.py": [
-1788573771658940105,
+1788591780523373628,
 5232,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/desktop_ui.py": [
-1788573771658940105,
+1788591780523373628,
 2770,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/discord_tool.py": [
-1788573771658940105,
+1788591780523373628,
 31472,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/drive_preview_tool.py": [
-1788573771658940105,
+1788591780523373628,
 7033,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/env_passthrough.py": [
-1788573771658940105,
+1788591780523373628,
 6344,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/env_probe.py": [
-1788573771658940105,
+1788591780523373628,
 11445,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/fal_common.py": [
-1788573771660940119,
+1788591780525373614,
 5300,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/feishu_doc_tool.py": [
-1788573771660940119,
+1788591780525373614,
 3603,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/feishu_drive_tool.py": [
-1788573771660940119,
+1788591780525373614,
 8198,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/feishu_lark.py": [
-1788573771660940119,
+1788591780525373614,
 3248,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_operations.py": [
-1788573771661940127,
+1788591780525373614,
 75814,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_operations_common.py": [
-1788573771661940127,
+1788591780525373614,
 10396,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_operations_lint.py": [
-1788573771661940127,
+1788591780526373607,
 13701,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_operations_search.py": [
-1788573771661940127,
+1788591780526373607,
 45173,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_state.py": [
-1788573771661940127,
+1788591780526373607,
 9713,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_tools.py": [
-1788573771661940127,
+1788591780526373607,
 61909,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_tools_paths.py": [
-1788573771661940127,
+1788591780526373607,
 8884,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_tools_read_tracking.py": [
-1788573771662940134,
+1788591780526373607,
 11085,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/file_tools_write_guards.py": [
-1788573771662940134,
+1788591780526373607,
 20115,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/focus_pane_tool.py": [
-1788573771662940134,
+1788591780526373607,
 2631,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/fuzzy_match.py": [
-1788573771662940134,
+1788591780527373600,
 27644,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/homeassistant_tool.py": [
-1788573771662940134,
+1788591780527373600,
 14025,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/hook_output_spill.py": [
-1788573771662940134,
+1788591780527373600,
 4878,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/image_generation_catalog.py": [
-1788573771662940134,
+1788591780527373600,
 16792,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/image_generation_tool.py": [
-1788573771662940134,
+1788591780527373600,
 42405,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/image_source.py": [
-1788573771662940134,
+1788591780527373600,
 14444,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/interpreter_shutdown.py": [
-1788573771662940134,
+1788591780527373600,
 1225,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/interrupt.py": [
-1788573771662940134,
+1788591780527373600,
 3554,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/kanban_tools.py": [
-1788573771663940141,
+1788591780527373600,
 48219,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/kanban_tools_schemas.py": [
-1788573771663940141,
+1788591780528373593,
 21500,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/lazy_deps.py": [
-1788573771663940141,
+1788591780528373593,
 36631,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/managed_tool_gateway.py": [
-1788573771663940141,
+1788591780528373593,
 14729,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_dashboard_oauth.py": [
-1788573771663940141,
+1788591780528373593,
 5491,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_death_supervisor.py": [
-1788573771663940141,
+1788591780528373593,
 9341,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_oauth.py": [
-1788573771663940141,
+1788591780528373593,
 53357,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_oauth_manager.py": [
-1788573771664940149,
+1788591780528373593,
 23926,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_oauth_provider.py": [
-1788573771664940149,
+1788591780528373593,
 6722,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_schema_cache.py": [
-1788573771664940149,
+1788591780528373593,
 5175,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_agent.py": [
-1788573771664940149,
+1788591780529373586,
 12397,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_common.py": [
-1788573771664940149,
+1788591780529373586,
 5746,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_config.py": [
-1788573771664940149,
+1788591780529373586,
 15665,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_content.py": [
-1788573771664940149,
+1788591780529373586,
 11489,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_discovery.py": [
-1788573771664940149,
+1788591780529373586,
 25894,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_errors.py": [
-1788573771665940156,
+1788591780529373586,
 17337,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_handlers.py": [
-1788573771665940156,
+1788591780529373586,
 31904,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_health.py": [
-1788573771665940156,
+1788591780530373579,
 16009,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_lifecycle.py": [
-1788573771665940156,
+1788591780530373579,
 13316,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_loop.py": [
-1788573771665940156,
+1788591780530373579,
 12816,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_registration.py": [
-1788573771665940156,
+1788591780530373579,
 19371,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_sampling.py": [
-1788573771665940156,
+1788591780530373579,
 18269,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_schema.py": [
-1788573771665940156,
+1788591780530373579,
 11299,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_server_run.py": [
-1788573771665940156,
+1788591780530373579,
 24375,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/mcp_tool_transport.py": [
-1788573771666940163,
+1788591780530373579,
 29994,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/memory_tool.py": [
-1788573771666940163,
+1788591780530373579,
 18039,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/memory_tool_store.py": [
-1788573771666940163,
+1788591780531373572,
 22705,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/microsoft_graph_auth.py": [
-1788573771666940163,
+1788591780531373572,
 7438,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/microsoft_graph_client.py": [
-1788573771666940163,
+1788591780531373572,
 10885,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/neutts_synth.py": [
-1788573771669940185,
+1788591780535373544,
 3134,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/open_preview_tool.py": [
-1788573771669940185,
+1788591780535373544,
 3854,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/openrouter_client.py": [
-1788573771669940185,
+1788591780535373544,
 1587,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/osv_check.py": [
-1788573771669940185,
+1788591780535373544,
 10273,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/patch_parser.py": [
-1788573771669940185,
+1788591780535373544,
 19065,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/path_security.py": [
-1788573771669940185,
+1788591780535373544,
 1508,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/plugin_guard.py": [
-1788573771669940185,
+1788591780535373544,
 7845,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/preview_tool.py": [
-1788573771670940193,
+1788591780535373544,
 3535,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/process_registry.py": [
-1788573771670940193,
+1788591780536373537,
 110787,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/process_registry_notifications.py": [
-1788573771670940193,
+1788591780536373537,
 12857,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/project_tools.py": [
-1788573771670940193,
+1788591780536373537,
 6450,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/react_to_message_tool.py": [
-1788573771670940193,
+1788591780536373537,
 6336,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/read_extract.py": [
-1788573771670940193,
+1788591780536373537,
 24973,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/read_preview_tool.py": [
-1788573771670940193,
+1788591780536373537,
 3262,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/read_terminal_tool.py": [
-1788573771671940200,
+1788591780536373537,
 3275,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/read_window_tool.py": [
-1788573771671940200,
+1788591780536373537,
 2613,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/schema_sanitizer.py": [
-1788573771671940200,
+1788591780537373530,
 18254,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/self_repo_guard.py": [
-1788573771671940200,
+1788591780537373530,
 21197,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/send_message_senders.py": [
-1788573771671940200,
+1788591780537373530,
 34982,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/send_message_targets.py": [
-1788573771671940200,
+1788591780537373530,
 11099,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/send_message_tool.py": [
-1788573771671940200,
+1788591780537373530,
 33277,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/session_search_tool.py": [
-1788573771672940207,
+1788591780537373530,
 37453,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/setup_mcp_tool.py": [
-1788573771672940207,
+1788591780537373530,
 4603,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/shell_heredoc.py": [
-1788573771672940207,
+1788591780537373530,
 8788,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_ledger.py": [
-1788573771672940207,
+1788591780538373523,
 18664,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_linter.py": [
-1788573771672940207,
+1788591780538373523,
 11118,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_manager_batch.py": [
-1788573771672940207,
+1788591780538373523,
 9964,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_manager_guards.py": [
-1788573771672940207,
+1788591780538373523,
 15422,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_manager_tool.py": [
-1788573771672940207,
+1788591780538373523,
 44894,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_provenance.py": [
-1788573771672940207,
+1788591780538373523,
 1168,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skill_usage.py": [
-1788573771673940215,
+1788591780538373523,
 36245,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skillevaluator_scan.py": [
-1788573771673940215,
+1788591780538373523,
 7363,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_ast_audit.py": [
-1788573771673940215,
+1788591780538373523,
 4142,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_guard.py": [
-1788573771673940215,
+1788591780539373516,
 43471,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub.py": [
-1788573771673940215,
+1788591780539373516,
 15561,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_clawhub.py": [
-1788573771673940215,
+1788591780539373516,
 23043,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_github.py": [
-1788573771673940215,
+1788591780539373516,
 24404,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_install.py": [
-1788573771673940215,
+1788591780539373516,
 14070,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_models.py": [
-1788573771673940215,
+1788591780539373516,
 14518,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_official.py": [
-1788573771674940222,
+1788591780539373516,
 18828,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_search.py": [
-1788573771674940222,
+1788591780539373516,
 8827,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_skillssh.py": [
-1788573771674940222,
+1788591780539373516,
 17634,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_hub_sources.py": [
-1788573771674940222,
+1788591780539373516,
 20944,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync.py": [
-1788573771674940222,
+1788591780540373509,
 22437,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync_bundled_ops.py": [
-1788573771674940222,
+1788591780540373509,
 10454,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync_client.py": [
-1788573771674940222,
+1788591780540373509,
 27582,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync_client_org.py": [
-1788573771674940222,
+1788591780540373509,
 14522,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync_client_wire.py": [
-1788573771674940222,
+1788591780540373509,
 17289,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_sync_optional.py": [
-1788573771674940222,
+1788591780540373509,
 10147,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_tool.py": [
-1788573771675940229,
+1788591780540373509,
 37268,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_tool_dedup.py": [
-1788573771675940229,
+1788591780540373509,
 3721,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_tool_plugin.py": [
-1788573771675940229,
+1788591780540373509,
 8474,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/skills_tool_setup.py": [
-1788573771675940229,
+1788591780540373509,
 6848,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/slash_confirm.py": [
-1788573771675940229,
+1788591780541373503,
 4839,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/spill_safety.py": [
-1788573771675940229,
+1788591780541373503,
 3063,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/subagent_worktree.py": [
-1788573771675940229,
+1788591780541373503,
 9397,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_hints.py": [
-1788573771675940229,
+1788591780541373503,
 8388,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_scope.py": [
-1788573771675940229,
+1788591780541373503,
 7726,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool.py": [
-1788573771675940229,
+1788591780541373503,
 61624,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_backends.py": [
-1788573771676940236,
+1788591780541373503,
 17631,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_background.py": [
-1788573771676940236,
+1788591780541373503,
 10088,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_config.py": [
-1788573771676940236,
+1788591780541373503,
 4716,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_guards.py": [
-1788573771676940236,
+1788591780541373503,
 11311,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_lifecycle.py": [
-1788573771676940236,
+1788591780541373503,
 13516,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_result.py": [
-1788573771676940236,
+1788591780542373496,
 14315,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/terminal_tool_sudo.py": [
-1788573771676940236,
+1788591780542373496,
 20577,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/thread_context.py": [
-1788573771676940236,
+1788591780542373496,
 2855,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/threat_patterns.py": [
-1788573771676940236,
+1788591780542373496,
 9451,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tip_tool.py": [
-1788573771676940236,
+1788591780542373496,
 3222,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/tirith_security.py": [
-1788573771676940236,
+1788591780542373496,
 25221,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/todo_tool.py": [
-1788573771677940244,
+1788591780542373496,
 13102,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_backend_helpers.py": [
-1788573771677940244,
+1788591780542373496,
 12319,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_output_limits.py": [
-1788573771677940244,
+1788591780542373496,
 2519,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_result_storage.py": [
-1788573771677940244,
+1788591780542373496,
 12113,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_search.py": [
-1788573771677940244,
+1788591780542373496,
 27152,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_search_catalog.py": [
-1788573771677940244,
+1788591780542373496,
 10903,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tool_search_validation.py": [
-1788573771677940244,
+1788591780543373489,
 6428,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tour_tool.py": [
-1788573771677940244,
+1788591780543373489,
 6578,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_audio.py": [
-1788573771677940244,
+1788591780543373489,
 14540,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_cloud.py": [
-1788573771677940244,
+1788591780543373489,
 23337,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_command.py": [
-1788573771677940244,
+1788591780543373489,
 14244,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_common.py": [
-1788573771678940251,
+1788591780543373489,
 3926,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_local.py": [
-1788573771678940251,
+1788591780543373489,
 13836,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/transcription_tools.py": [
-1788573771678940251,
+1788591780543373489,
 31333,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_command_provider.py": [
-1788573771678940251,
+1788591780543373489,
 15550,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_streaming.py": [
-1788573771678940251,
+1788591780543373489,
 14997,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_text_normalize.py": [
-1788573771678940251,
+1788591780543373489,
 10598,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool.py": [
-1788573771678940251,
+1788591780544373482,
 36953,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_delivery.py": [
-1788573771678940251,
+1788591780544373482,
 21080,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_lifecycle.py": [
-1788573771678940251,
+1788591780544373482,
 8070,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_local.py": [
-1788573771679940258,
+1788591780544373482,
 9524,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_openai.py": [
-1788573771679940258,
+1788591780544373482,
 7872,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_plugins.py": [
-1788573771679940258,
+1788591780544373482,
 4576,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_providers.py": [
-1788573771679940258,
+1788591780544373482,
 30749,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/tts_tool_speaker.py": [
-1788573771679940258,
+1788591780544373482,
 16419,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/url_safety.py": [
-1788573771679940258,
+1788591780544373482,
 26138,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/video_generation_tool.py": [
-1788573771679940258,
+1788591780544373482,
 17356,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/vision_tools.py": [
-1788573771679940258,
+1788591780545373475,
 52035,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/vision_tools_image_prep.py": [
-1788573771680940266,
+1788591780545373475,
 11330,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/voice_client_config.py": [
-1788573771680940266,
+1788591780545373475,
 10455,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/voice_mode.py": [
-1788573771680940266,
+1788591780545373475,
 72573,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/voice_mode_transcript.py": [
-1788573771680940266,
+1788591780545373475,
 5530,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/wake_word.py": [
-1788573771680940266,
+1788591780545373475,
 37289,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/wake_word_engines.py": [
-1788573771680940266,
+1788591780546373468,
 12022,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/web_result_cache.py": [
-1788573771682940280,
+1788591780548373454,
 13605,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/web_tools.py": [
-1788573771683940288,
+1788591780548373454,
 28374,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/web_tools_extract.py": [
-1788573771683940288,
+1788591780549373447,
 9994,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/web_tools_rescue.py": [
-1788573771683940288,
+1788591780549373447,
 5397,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/web_tools_truncate.py": [
-1788573771683940288,
+1788591780549373447,
 8018,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/website_policy.py": [
-1788573771683940288,
+1788591780549373447,
 8873,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/working_diff.py": [
-1788573771683940288,
+1788591780549373447,
 4440,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/write_approval.py": [
-1788573771683940288,
+1788591780549373447,
 12431,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/x_search_tool.py": [
-1788573771683940288,
+1788591780549373447,
 15035,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/xai_http.py": [
-1788573771683940288,
+1788591780549373447,
 10948,
 false
 ],
 "/home/runner/.hermes/hermes-agent/tools/xai_video_tools.py": [
-1788573771683940288,
+1788591780549373447,
 4599,
 true
 ],
 "/home/runner/.hermes/hermes-agent/tools/yuanbao_tools.py": [
-1788573771683940288,
+1788591780549373447,
 21901,
 true
 ]
