@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788627840.1795957,
+"at":1788641798.6947904,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -316,6 +316,12 @@
 },
 "kimi-k3":{
 "name":"nara/kimi-k3"
+},
+"nara/kimi-k3-promo":{
+"name":"nara/kimi-k3-promo"
+},
+"kimi-k3-promo":{
+"name":"nara/kimi-k3-promo"
 },
 "nara/laguna-s-2.1":{
 "name":"nara/laguna-s-2.1"
