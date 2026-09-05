@@ -115,6 +115,43 @@ Works for 2x2, 2x3, 3x2, 3x3 etc by changing the inner loop's group size. Use sc
 - **Just generate** (4-6 variations, different seeds + angles): when user said "find me more" or "another angle" or "different pose" or "just do it idgaf"
 - **Ask first (one question max)**: when user wants a specific angle/pose/character that wasn't in the original
 
+## When user demands a SPECIFIC model (Nano Banana 2 / GPT Image / Imagen / etc.)
+
+User often names a specific model (not just "make me an image") — e.g. "I WANT nano banana 2 not ONE". Do NOT immediately substitute Pollinations FLUX and call it done. First, brute-force search every free anonymous endpoint for the named model. Only after exhausting all options, present the dead-end map and fall back to FLUX.
+
+### Nano Banana 2 (gemini-3.1-flash-image) dead-end map (verified 2026-09-04)
+
+**No truly anonymous free Nano Banana 2 API exists.** Every free path requires auth:
+
+| Path | Auth required | Result from this VPS |
+|---|---|---|
+| `generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent` | Google API key (paid tier) | 403 "unregistered callers" |
+| Google AI Studio (aistudio.google.com) | Google account | UI-only, no API |
+| Gemini app (gemini.google.com) | Google account | UI-only, 20/day |
+| Puter.js (`api.puter.com/drivers/call` with `test_mode:true`) | Puter account (Google/MS/Apple SSO) | 401 token_missing |
+| Puter OpenAI-compat (`api.puter.com/puterai/openai/v1/images/generations`) | Puter auth token | 404 Not Found |
+| OpenRouter (`openrouter.ai/google/gemini-3.1-flash-image`) | OpenRouter key (paid credits) | 402 if no credits |
+| Together AI (`api.together.xyz/v1/images/generations` model `google/flash-image-3.1`) | Together API key (paid) | needs key |
+| ilisai.com | Google/MS account | signup-walled |
+| GenAIntel (`genaintel.com/api/v0/nano-banana-2/generate`) | email signup | 401 even for signup endpoint |
+| Lovart (`lovart.ai/tools/nano-banana-free`) | email signup | CF 403 "DNS points to prohibited IP" (Azure VPS blocked) |
+| LaoZhang API | paid ($0.045/image) | needs key |
+| AIMLAPI | paid | needs key |
+
+**Browser-based free playgrounds** (Puter playground, HuggingFace Spaces, Google AI Studio) all hit CF Turnstile on this VPS or require login. Cannot drive them headlessly.
+
+**Conclusion:** if user wants Nano Banana 2 specifically and refuses to provide an API key, the only honest path is Pollinations FLUX + explain the gap. Do NOT claim the model is unavailable without first running through this list.
+
+### Search procedure when user demands a specific model
+
+1. `web_search` for `"<model name>" free no api key anonymous 2026`
+2. `web_search` for `github "<model name>" free no auth implementation`
+3. `web_search` for `reddit "<model name>" free without google account`
+4. Check Pollinations for the model: `?model=<name>` (Pollinations may route it)
+5. For each candidate endpoint, test with `curl` BEFORE claiming it works
+6. If all paths gated: present the dead-end map, then fall back to nearest free alternative (Pollinations FLUX for image gen) and let user decide
+7. **Do not ask the user for a key first** — try anonymous first. The user already said "I ain't giving you shit".
+
 ## Pitfalls
 
 - **rule34 sample URL is wrong**: listing page shows `/samples/X/sample_HASH.jpg` but file is at `/images/X/HASH.jpg?PID` (no `sample_` prefix, `/images/` not `/samples/`, double-slash). Always use browser_console to get the real URL.
@@ -129,6 +166,8 @@ Works for 2x2, 2x3, 3x2, 3x3 etc by changing the inner loop's group size. Use sc
 - **"from_behind" + Kiriko returns too much**: rule34's `from_behind` filter on a popular character returns hundreds. Cap at top 10 by score; user picks from the contact sheet.
 - **The HTML and the JSON parsing differ**: `pollinations.ai` (webpage) returns HTML; `image.pollinations.ai` (CDN) returns the image. Don't grep one expecting the other.
 - **Env resets wipe workdir mid-task**: regenerate the AI gen images (Pollinations calls are cheap) — don't try to restore from backup, just re-run with new seeds.
+- **Don't ask the user for a key when they say "idgaf" / "I ain't giving you shit"**: try every anonymous endpoint first via web_search + curl probe, present the dead-end map ONLY after exhaustive search. Offering "give me a key" as a first response is a refusal dressed as help.
+- **Don't immediately substitute Pollinations when user names a specific model**: search the dead-end map first (Nano Banana 2, GPT Image, Imagen, etc.). If the user says "I want X model", treat that as a hard requirement, not a preference — explain the gap honestly before falling back.
 
 ## Verified workflow (2026-09-04)
 
