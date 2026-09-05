@@ -22,6 +22,19 @@ ENV
 chmod 600 "$HERMES_HOME/.env"
 echo "[boot] .env refreshed from secrets"
 
+# ---- fold sqlite WAL sidecars into the main DBs (restored -wal may hold the newest chats) ----
+if command -v python3 >/dev/null 2>&1; then
+  python3 - "$HERMES_HOME" <<'PYCHK'
+import sqlite3, sys, glob, os
+for db in glob.glob(os.path.join(sys.argv[1], "**", "*.db"), recursive=True):
+    try:
+        sqlite3.connect(db).execute("PRAGMA wal_checkpoint(TRUNCATE);")
+        print(f"[boot] wal checkpoint: {os.path.basename(db)}")
+    except Exception:
+        pass
+PYCHK
+fi
+
 # ---- run ----
 echo "[boot] gateway starting (window: ${RUN_MINUTES:-285}m)"
 timeout "${RUN_MINUTES:-285}m" "$HERMES" gateway run 2>&1 | tee -a "$HERMES_HOME/gateway.log"

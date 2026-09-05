@@ -6,6 +6,10 @@ when the state branch doesn't exist (and hash-marker files live on that same
 missing branch, so the "unchanged?" check also 404s → looks unchanged-free
 and pushes nothing... and any push that DID fire would have failed silently).
 
+v3 (2026-09-04): size cap 8MB→50MB (state.db hit the old cap and was silently skipped —
+     chat history lost on every reset), + push sqlite -wal/-shm sidecars so the newest
+     messages survive, + loud SKIP-SIZE logging instead of silent drops.
+
 v2 approach (pure API, no git binary needed):
   1. Ensure state branch exists: GET ref/heads/state; if 404, create it
      from the current main head SHA (empty-ish starting point is fine).
@@ -40,7 +44,9 @@ def gh(method, path, payload=None):
 
 SKIP_DIRS = {"__pycache__", ".cache", "node_modules", "request_dumps", "tmp", "crashes"}
 SKIP_FILES = {".env", "gateway.log", "nohup.out"}
-PUSHABLE_EXT = {".db", ".json", ".yaml", ".yml", ".md", ".txt", ".jsonl", ".skill"}
+PUSHABLE_EXT = {".db", ".db-wal", ".db-shm", ".json", ".yaml", ".yml", ".md", ".txt", ".jsonl", ".skill"}
+SIZE_CAP = 50 * 1024 * 1024  # 50MB — state.db crossed the old 8MB cap and was silently
+                             # skipped for hours = the "chat history reverts at reset" bug (2026-09-04)
 
 def iter_files():
     for root, dirs, files in os.walk(STATE_ROOT):
@@ -50,7 +56,9 @@ def iter_files():
                 continue
             p = os.path.join(root, f)
             try:
-                if os.path.getsize(p) > 8 * 1024 * 1024:
+                sz = os.path.getsize(p)
+                if sz > SIZE_CAP:
+                    print(f"[pusher] SKIP-SIZE {f} ({sz} bytes > {SIZE_CAP})", flush=True)
                     continue
                 with open(p, "rb") as fh:
                     yield os.path.relpath(p, STATE_ROOT).replace(os.sep, "/"), fh.read()
