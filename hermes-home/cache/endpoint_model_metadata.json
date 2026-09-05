@@ -1,6 +1,6 @@
 {
 "https://9router-production-0a47.up.railway.app/v1":{
-"at":1788561304.3751001,
+"at":1788573827.5280058,
 "models":{
 "DS1":{
 "name":"DS1"
@@ -43,6 +43,9 @@
 },
 "BAI":{
 "name":"BAI"
+},
+"NewQ":{
+"name":"NewQ"
 },
 "nvidia/minimaxai/minimax-m2.7":{
 "name":"nvidia/minimaxai/minimax-m2.7"
