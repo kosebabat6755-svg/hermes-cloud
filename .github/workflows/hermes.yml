@@ -56,7 +56,7 @@ jobs:
 
       - name: Run Hermes Gateway (4h45m window)
         env:
-          RUN_MINUTES: "285"
+          RUN_MINUTES: "267"
           HERMES_HOME: ${{ github.workspace }}/state/hermes
           ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
