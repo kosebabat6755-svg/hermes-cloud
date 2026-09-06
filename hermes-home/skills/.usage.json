@@ -20,14 +20,14 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-06T08:55:00.673174+00:00",
-    "last_viewed_at": "2026-09-06T08:55:00.671952+00:00",
+    "last_used_at": "2026-09-06T09:00:45.022967+00:00",
+    "last_viewed_at": "2026-09-06T09:00:45.021846+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 9,
-    "view_count": 9
+    "use_count": 10,
+    "view_count": 10
   },
   "headless-windows-app-streaming": {
     "archived_at": null,
