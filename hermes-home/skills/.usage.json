@@ -50,14 +50,14 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-06T09:06:58.711812+00:00",
-    "last_viewed_at": "2026-09-06T09:06:58.710551+00:00",
+    "last_used_at": "2026-09-06T09:23:08.835559+00:00",
+    "last_viewed_at": "2026-09-06T09:23:08.834483+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 6,
-    "view_count": 6
+    "use_count": 7,
+    "view_count": 7
   },
   "hermes-agent": {
     "archived_at": null,
@@ -65,14 +65,14 @@
     "created_by": null,
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-06T09:07:01.734695+00:00",
-    "last_viewed_at": "2026-09-06T09:07:01.733548+00:00",
+    "last_used_at": "2026-09-06T09:23:04.475668+00:00",
+    "last_viewed_at": "2026-09-06T09:23:04.474479+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 4,
+    "view_count": 4
   },
   "hermes-agent-skill-authoring": {
     "archived_at": null,
