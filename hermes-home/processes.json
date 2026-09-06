@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "session_id": "proc_a8f157e0a71f",
+    "command": "/usr/local/bin/cloudflared access tcp --hostname said-fort-dictionary-about.trycloudflare.com:443 --listener 127.0.0.1:9090 > /tmp/cf_access.log 2>&1",
+    "pid": 5948,
+    "pid_scope": "host",
+    "host_start_time": 564999,
+    "systemd_unit": "hermes-worker-proc_a8f157e0a71f.scope",
+    "cwd": "/tmp",
+    "started_at": 1788683747.3205109,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_message_id": "",
+    "watcher_interval": 0,
+    "parent_session_id": "",
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]
