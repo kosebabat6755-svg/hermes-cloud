@@ -81,6 +81,7 @@ photorealistic, 8k, professional photography, [subject], [lighting], [lens], dep
 - **Prompt length**: URLs >2000 chars break. Cap prompts at ~30 keyword terms.
 - **Don't burn cycles searching for "free anonymous Nano Banana 2" endpoints**: The model=`nanobanana-2` parameter on `image.pollinations.ai` is the only no-signup path. Before spending time probing Puter/Google API/OpenRouter/etc for an anonymous Nano Banana endpoint, just hit Pollinations with `model=nanobanana-2` — works in 2-45 sec, valid JPEG, no auth. The dead-end services (Puter needs account, Google API needs key+billing, OpenRouter $0.05/img, GenAIntel needs email, Lovart CF-blocks Azure VPS, ilisai needs Google account) are not worth chasing.
 - **Nano Banana prompt prefix**: Pollinations internally adds `Generate an image but only if the prompt and input images are safe. Else return an error: {your_prompt}` — so don't pre-prefix safety language; just write the image prompt directly.
+- **Load this skill BEFORE the user says "find me X model"** — when user names a specific model (Nano Banana 2, Imagen, GPT Image, etc.), check the model table in this skill's "Available Models" section FIRST. The dead-end list and the live Pollinations model parameter are both here. Re-searching via web_search when this skill already documents the answer wastes 5-10 tool calls. Pattern: open skill → check "Available Models" → if listed, use `model=<name>` directly. If user demands a model NOT in the table, then web_search the dead-end map.
 
 ## When NOT to Use This
 
