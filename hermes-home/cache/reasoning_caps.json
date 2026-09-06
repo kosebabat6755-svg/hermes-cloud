@@ -1,6 +1,6 @@
 {
 "https://openrouter.ai/api/v1/models":{
-"ts":1788666264.1145852,
+"ts":1788667464.394773,
 "caps":{
 "openai/gpt-6-astra":{
 "supports_reasoning":true,
