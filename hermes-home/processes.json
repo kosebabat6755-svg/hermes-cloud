@@ -11,15 +11,15 @@
     "task_id": "session:agent:main:telegram:dm:6592796294",
     "owner_task_id": "20260902_190322_927463f3",
     "session_key": "agent:main:telegram:dm:6592796294",
-    "watcher_platform": "",
-    "watcher_chat_id": "",
-    "watcher_user_id": "",
-    "watcher_user_name": "",
+    "watcher_platform": "telegram",
+    "watcher_chat_id": "6592796294",
+    "watcher_user_id": "6592796294",
+    "watcher_user_name": "Mohammad",
     "watcher_thread_id": "",
-    "watcher_message_id": "",
-    "watcher_interval": 0,
+    "watcher_message_id": "3856",
+    "watcher_interval": 5,
     "parent_session_id": "",
-    "notify_on_complete": false,
+    "notify_on_complete": true,
     "watch_patterns": []
   }
 ]
