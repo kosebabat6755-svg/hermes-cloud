@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "session_id": "proc_25e51c95a07a",
+    "command": "# Download android-x86 9.0 64-bit ISO\ncd /home/runner/work/hermes-cloud/hermes-cloud/state/hermes/workdir\ncurl -sL \"https://archive.org/download/sjarb_android_9.0r2/android-x86_64-9.0-r2.iso\" -o android-x86_64-9.0-r2.iso -A \"Mozilla/5.0\" --max-time 1800 -w \"HTTP: %{http_code} | Size: %{size_download} bytes | Time: %{time_total}s\\n\" 2>&1 | tail -3\nls -la android-x86_64-9.0-r2.iso 2>/dev/null",
+    "pid": 8428,
+    "pid_scope": "host",
+    "host_start_time": 70216,
+    "systemd_unit": "hermes-worker-proc_25e51c95a07a.scope",
+    "cwd": "/home/runner",
+    "started_at": 1788735556.991701,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_message_id": "",
+    "watcher_interval": 0,
+    "parent_session_id": "",
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]
