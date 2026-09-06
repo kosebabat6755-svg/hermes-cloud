@@ -20,14 +20,14 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-06T08:47:50.615966+00:00",
-    "last_viewed_at": "2026-09-06T08:47:50.614782+00:00",
+    "last_used_at": "2026-09-06T08:55:00.673174+00:00",
+    "last_viewed_at": "2026-09-06T08:55:00.671952+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 8,
-    "view_count": 8
+    "use_count": 9,
+    "view_count": 9
   },
   "headless-windows-app-streaming": {
     "archived_at": null,
@@ -35,14 +35,14 @@
     "created_by": "agent",
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-06T08:42:46.252869+00:00",
-    "last_viewed_at": "2026-09-06T08:42:46.250635+00:00",
+    "last_used_at": "2026-09-06T08:55:06.643589+00:00",
+    "last_viewed_at": "2026-09-06T08:55:06.642395+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 5,
+    "view_count": 5
   },
   "hermes-agent": {
     "archived_at": null,
