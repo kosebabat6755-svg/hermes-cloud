@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "session_id": "proc_c1c4869f622f",
+    "command": "sudo qemu-system-x86_64 -m 4096 -smp 2 -cpu host -machine accel=kvm -hda /home/runner/work/hermes-cloud/hermes-cloud/state/hermes/workdir/android-vm.qcow2 -cdrom /home/runner/work/hermes-cloud/hermes-cloud/state/hermes/workdir/android-x86_64-9.0-r2.iso -boot d -vga std -netdev user,id=net0 -device e1000,netdev=net0 -vnc :98 -k en-us 2>&1 | tee /tmp/qemu.log",
+    "pid": 9002,
+    "pid_scope": "host",
+    "host_start_time": 102291,
+    "systemd_unit": "hermes-worker-proc_c1c4869f622f.scope",
+    "cwd": "/home/runner",
+    "started_at": 1788735877.73832,
+    "task_id": "session:agent:main:telegram:dm:6592796294",
+    "owner_task_id": "20260902_190322_927463f3",
+    "session_key": "agent:main:telegram:dm:6592796294",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_message_id": "",
+    "watcher_interval": 0,
+    "parent_session_id": "",
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]
