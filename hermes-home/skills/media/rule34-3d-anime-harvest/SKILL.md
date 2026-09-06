@@ -100,6 +100,8 @@ sp.run(["ffmpeg","-y","-v","error"] + inputs + ["-filter_complex", filter, "-map
 
 Works for 2x2, 2x3, 3x2, 3x3 etc by changing the inner loop's group size. Use scale=400 per tile for ~800x800 sheet at 2x2.
 
+**ffmpeg `tile=` filter is unreliable for contact sheets** — it silently drops frames when input dimensions differ even by 1px (e.g. 832x1216 vs 832x1217 after model-side resize). Symptom: vision_analyze reports "only frame 1 visible, rest are black". Fix: never use `tile=NxM`. Always pre-scale every input to the same exact dimensions (`scale=400:-1`) and use the manual `xstack` + `vstack` chain shown above. The manual chain is verbose but renders all tiles correctly. Verify with `identify` or `ffprobe` on the output before claiming success.
+
 ## Source → AI-variation pipeline (canonical workflow)
 
 1. User requests "more of X character in Y style" or "different angle of this image" or "from behind"
@@ -168,6 +170,8 @@ User often names a specific model (not just "make me an image") — e.g. "I WANT
 - **Env resets wipe workdir mid-task**: regenerate the AI gen images (Pollinations calls are cheap) — don't try to restore from backup, just re-run with new seeds.
 - **Don't ask the user for a key when they say "idgaf" / "I ain't giving you shit"**: try every anonymous endpoint first via web_search + curl probe, present the dead-end map ONLY after exhaustive search. Offering "give me a key" as a first response is a refusal dressed as help.
 - **Don't immediately substitute Pollinations when user names a specific model**: search the dead-end map first (Nano Banana 2, GPT Image, Imagen, etc.). If the user says "I want X model", treat that as a hard requirement, not a preference — explain the gap honestly before falling back.
+- **User's "don't stop until you have found it" overrides confidence in negative results**: when the user pushes back ("shut it figure it out", "idgaf", "don't stop"), do NOT give up after 1-2 searches. Burn through 5-10 web searches and curl probes, including GitHub source code spelunking for the target service. The breakthrough often comes from a 5th-7th search that names a different name for the same thing (e.g. the `nanobanana-2` Pollinations model parameter was documented in the pollinations/pollinations GitHub source, not the marketing site). The "give up" instinct at attempt 2-3 is wrong for this user.
+- **GitHub source code is the source of truth for undocumented model parameters**: Pollinations, OpenRouter, and other aggregator services don't always document every model they route. `web_search` for the GitHub repo → look at `src/models.ts` or `src/<service>.py` for the actual model name strings. This is how `nanobanana-2` was discovered. The marketing pages list FLUX, SDXL, turbo — the GitHub source lists all Vertex AI Gemini models too.
 
 ## Verified workflow (2026-09-04)
 
